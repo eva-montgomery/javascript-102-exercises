@@ -5,16 +5,11 @@
 // > sumNumbers([1, 4, 8])
 // 13
 
-// function sumNumbers(num1, num2, num3) {
-//   return num1 + num2 + num3
-// }  
-// sumNumbers([1, 4, 8]);
-
-function sumNumbers(arr) {
-const sumNumbers = [1, 4, 8]
-    var total = 0;
-    for(var i = 0; i < sumNumbers.length; i++){
-        total += sumNumbers[i];
-    }
+function sumNumbers(array) {
+  let sum = 0;
+  for (let number of array) {
+    sum += number;
   }
-  sumNumbers([1, 4, 8]);
+  return sum;
+}
+console.log(sumNumbers([1, 4, 8]));

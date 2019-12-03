@@ -11,12 +11,14 @@
 // []
 
 
-function positiveNumbers() {
-  for (let numbers in positiveNumbers ) {
-    if (numbers % 2 === 0) {
-      return numbers;
+function positiveNumbers(numbers) {
+  const emptyArr = [];
+  for (let num of numbers) {
+    if (num % 2 === 0) {
+      emptyArr.push(num);
     }
   }
+    return emptyArr;
 }
-positiveNumbers([1, -3, 5, -3, 0])
+console.log(positiveNumbers([1, -3, 5, -3, 4]));
 
